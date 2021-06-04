@@ -1,6 +1,5 @@
 body {
 	font-size: 130%;
-	background-color: #444444;
 	font-family: candara, helvetica, sans-serif;
 	margin: 0px; }
 	
@@ -9,17 +8,9 @@ body {
 	margin: 16px auto auto auto;
 	border-radius: 64px;
 	padding: 8px;
-	padding-bottom: 32px;
-	background-color: #222222;
-	color: #EEEEEE }
+	padding-bottom: 32px; }
 	
-h1, h2 { color: skyblue; text-align: center; }
-
-h1 { font-size:  }
-
-h2 { font-size:  }
-
-h3 { font-size: ; text-align: center }
+h1, h2, h3 { text-align: center; }
 
 #fototessera { width: 250px; height: 250px; float: right; border-radius: 50%; }
 
@@ -47,3 +38,19 @@ a:hover { text-decoration: underline }
 	color: #888888;
 	font-size: 80%;
 	}
+	
+	
+@media (prefers-color-scheme: dark)
+{
+	body { background-color: #444444; }
+	#MainContainer { background-color: #222222; color: #EEEEEE }
+	h1, h2 { color: skyblue; }
+}
+
+@media (prefers-color-scheme: light)
+{
+	body { background-color: #CCCCCC; }
+	#MainContainer { background-color: white; color: black }
+	h1, h2 { color: deepskyblue; }
+	.pulsante { color: white; background-color: chocolate; }
+}
