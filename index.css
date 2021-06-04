@@ -1,0 +1,49 @@
+body {
+	font-size: 130%;
+	background-color: #444444;
+	font-family: candara, helvetica, sans-serif;
+	margin: 0px; }
+	
+#MainContainer {
+	max-width: 800px;
+	margin: 16px auto auto auto;
+	border-radius: 64px;
+	padding: 8px;
+	padding-bottom: 32px;
+	background-color: #222222;
+	color: #EEEEEE }
+	
+h1, h2 { color: skyblue; text-align: center; }
+
+h1 { font-size:  }
+
+h2 { font-size:  }
+
+h3 { font-size: ; text-align: center }
+
+#fototessera { width: 250px; height: 250px; float: right; border-radius: 50%; }
+
+.pulsante { background-color: sienna; display: inline-block; padding: 8px; border-radius: 12px; cursor: pointer; font-weight: bold; }
+
+.social {
+	display: inline-grid;
+	text-align: center;
+	width: 160px;
+	word-break: break-all;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+
+.social-logo { width: 64px; height: 64px; margin: auto; }
+
+a { color: unset; text-decoration: none }
+a:hover { text-decoration: underline }
+
+#footer {
+	max-width: 800px;
+	margin: 8px auto;
+	text-align: center;
+	bottom: 8px;
+	color: #888888;
+	font-size: 80%;
+	}
