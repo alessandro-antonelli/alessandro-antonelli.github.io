@@ -16,7 +16,7 @@ h1, h2, h3 { text-align: center; }
 
 .icona { width: 1em; height: 1em }
 
-.pulsante { background-color: sienna; display: inline-block; padding: 0.4em; border-radius: 0.5em; cursor: pointer; font-weight: bold; }
+.pulsante { display: inline-block; padding: 0.4em; border-radius: 0.5em; cursor: pointer; font-weight: bold; }
 
 .social {
 	display: inline-grid;
@@ -41,13 +41,20 @@ a:hover { text-decoration: underline }
 	color: #888888;
 	font-size: 80%;
 	}
-	
+
+/* Imposto come default il tema giorno, per i browser che non supportano "prefers-color-scheme" */
+body { background-color: #CCCCCC; }
+#MainContainer { background-color: white; color: black }
+h1, h2 { color: deepskyblue; }
+.pulsante { background-color: chocolate; color: white; }
 	
 @media (prefers-color-scheme: dark)
 {
-	body { background-color: #444444; }
-	#MainContainer { background-color: #222222; color: #EEEEEE }
+	body { background-color: #333333; }
+	#MainContainer { background-color: #1A1A1A; color: #DDDDDD; }
 	h1, h2 { color: skyblue; }
+	.pulsante { background-color: sienna; color: #DDDDDD; }
+	.icona, .social-logo { mix-blend-mode: difference; }
 }
 
 @media (prefers-color-scheme: light)
@@ -55,5 +62,5 @@ a:hover { text-decoration: underline }
 	body { background-color: #CCCCCC; }
 	#MainContainer { background-color: white; color: black }
 	h1, h2 { color: deepskyblue; }
-	.pulsante { color: white; background-color: chocolate; }
+	.pulsante { background-color: chocolate; color: white; }
 }
